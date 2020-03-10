@@ -1,0 +1,54 @@
+.about {
+  display: flex;
+  justify-content: space-between;
+  width: 1198px;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 33px;
+}
+
+.title {
+  display: flex;
+  width: 555px;
+  justify-content: center;
+  margin: 53px 0 0 0;
+}
+
+.title h3 {
+  font-family: 'MyriadPro-Semibold';
+  font-size: 80px;
+  color: #000000;
+  line-height: 44px;
+  width: 292px;
+  height: 152px;
+  margin: 0;
+}
+
+.title h3::first-letter {
+  font-size: 50px;
+}
+
+.title h3 strong {
+  margin: 6px;
+  font-size: 30px;
+  color: #717171;
+}
+
+.description {
+  width: 599px;
+  margin-top: 5px;
+}
+
+.description p {
+  font-size: 16px;
+  font-family: 'MyriadPro-Italic';
+  margin-top: 17px;
+  line-height: 19px;
+}
+
+.description p:last-child {
+  font-family: 'MyriadPro-Regular';
+  font-size: 14px;
+  line-height: 17px;
+  color: #595959;
+}
