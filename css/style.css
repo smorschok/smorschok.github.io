@@ -455,12 +455,15 @@ span {
 }
 
 .about {
-  display: flex;
-  justify-content: space-between;
   width: 1198px;
-  align-items: center;
   margin: 0 auto;
-  margin-top: 33px;
+  margin-top: 7px;
+}
+
+.about-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .title {
@@ -472,6 +475,7 @@ span {
 
 .title h3 {
   font-family: 'MyriadPro-Semibold';
+  position: relative;
   font-size: 80px;
   color: #000000;
   line-height: 44px;
@@ -484,6 +488,17 @@ span {
   font-size: 50px;
 }
 
+.title h3::after {
+  content: '';
+  position: absolute;
+  width: 132px;
+  bottom: 37px;
+  height: 1px;
+  right: 9px;
+  background-color: #c5c5c5;
+  display: flex;
+}
+
 .title h3 strong {
   margin: 6px;
   font-size: 30px;
@@ -492,7 +507,19 @@ span {
 
 .description {
   width: 599px;
-  margin-top: 5px;
+  margin: 5px 0 0 45px;
+  position: relative;
+}
+
+.description::before {
+  content: '';
+  position: absolute;
+  width: 1px;
+  bottom: 26px;
+  height: 133px;
+  left: -22px;
+  background-color: #c5c5c5;
+  display: flex;
 }
 
 .description p {
@@ -507,4 +534,43 @@ span {
   font-size: 14px;
   line-height: 17px;
   color: #595959;
+}
+
+.about-unit {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.about-column {
+  width: 231px;
+}
+
+.about-column .column-icon {
+  margin-bottom: 41px;
+  border: solid 1px #ffa800;
+  width: 54px;
+  margin: 0 auto 41px auto;
+  height: 54px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #e8e8e8;
+}
+
+.about-column .column-title {
+  font-family: 'MyriadPro-Regular';
+  font-size: 18px;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 19px;
+  margin-top: 22px;
+}
+
+.column-text {
+  font-family: 'MyriadPro-Italic';
+  text-align: center;
+  font-size: 10px;
+  margin-top: 19px;
 }
