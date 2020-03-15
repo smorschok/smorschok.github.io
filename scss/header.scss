@@ -45,11 +45,8 @@ h2{
     color: #ffffff;
     margin: 69px 0 0 46px;
 }
-.container-nav{
-    width: 1198px;
-    margin: 0 auto;
-}
-nav{
+
+.nav-promo{
     background-image: url(../media/nav.jpg);
     background-repeat: no-repeat;
     overflow-x: hidden;
@@ -57,7 +54,10 @@ nav{
     background-position: center;
     background-size: 1198px;
     margin-top: 64px;
-
+.container-nav{
+    width: 1198px;
+    margin: 0 auto;
+}
    ul{
     display: flex;
     justify-content: space-between;
@@ -76,7 +76,4 @@ a{
  }
 }
 }
-span{
-    color: #ffc600;
-    
-}
+

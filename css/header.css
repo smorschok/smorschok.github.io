@@ -48,12 +48,7 @@ h2 {
   margin: 69px 0 0 46px;
 }
 
-.container-nav {
-  width: 1198px;
-  margin: 0 auto;
-}
-
-nav {
+.nav-promo {
   background-image: url(../media/nav.jpg);
   background-repeat: no-repeat;
   overflow-x: hidden;
@@ -63,7 +58,12 @@ nav {
   margin-top: 64px;
 }
 
-nav ul {
+.nav-promo .container-nav {
+  width: 1198px;
+  margin: 0 auto;
+}
+
+.nav-promo ul {
   display: flex;
   justify-content: space-between;
   width: 352px;
@@ -73,16 +73,12 @@ nav ul {
   font-family: 'MyriadPro-Regular';
 }
 
-nav a {
+.nav-promo a {
   text-decoration: none;
   color: #ffc600;
 }
 
-nav a:hover {
+.nav-promo a:hover {
   color: #ffffff;
   text-decoration: underline;
-}
-
-span {
-  color: #ffc600;
 }

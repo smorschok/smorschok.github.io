@@ -40,5 +40,14 @@
 		url('../fonts/MyriadPro-Semibold.woff') format('woff');
 		
 }
+span{
+    color: #ffc600;
+}
+h1,h2,h3,h4,h5,h6{
+	font-family: 'MyriadPro-Semibold';
+	font-size: 30px;
+}
+
 @import "../css/header";
 @import "../css/main_about";
+@import "../css/featured-projects";
