@@ -1,0 +1,114 @@
+.our-team {
+  display: grid;
+  grid-template-columns: repeat(48, 1fr);
+  grid-template-rows: repeat(19, 1fr);
+  max-width: 1198px;
+  margin: 0 auto;
+  height: 587px;
+}
+
+.our-team img {
+  width: 100%;
+}
+
+.our-team h4 {
+  position: relative;
+  grid-column: 3/48;
+  grid-row: 4/6;
+  margin: 0;
+}
+
+.our-team h4::before {
+  content: '';
+  position: absolute;
+  width: 84px;
+  bottom: 4px;
+  height: 1px;
+  left: 69px;
+  background-color: #c5c5c5;
+}
+
+.our-team h4 span {
+  font-size: 50px;
+}
+
+.our-team h4 span:last-child {
+  color: black;
+}
+
+.our-team .development {
+  font-family: 'MyriadPro-Italic';
+}
+
+.our-team .development span {
+  color: #000;
+  font-weight: 600;
+  font-family: 'MyriadPro-Regular';
+}
+
+.our-team__description {
+  grid-column: 14/40;
+  grid-row: 3/7;
+  padding: 15px 0 0 0;
+}
+
+.our-team__description p:first-child {
+  font-family: "MyriadPro-Italic";
+  margin: 0;
+  padding: 10px 0 0 24px;
+}
+
+.our-team__description p:last-child {
+  font-size: 14px;
+  color: #595959;
+  margin: 0;
+  padding: 19px 0 0 23px;
+}
+
+.our-team__image1 {
+  grid-column: 15/22;
+  grid-row: 8/14;
+}
+
+.our-team__ceo {
+  grid-column: 16/21;
+  grid-row: 13/16;
+  text-align: center;
+  align-self: center;
+}
+
+.our-team__image2 {
+  grid-column: 23/30;
+  grid-row: 8/14;
+}
+
+.our-team__maneger {
+  grid-column: 24/29;
+  grid-row: 13/16;
+  text-align: center;
+  align-self: center;
+}
+
+.our-team__image3 {
+  grid-column: 31/38;
+  grid-row: 8/14;
+}
+
+.our-team__president {
+  grid-column: 32/37;
+  grid-row: 13/16;
+  text-align: center;
+  align-self: center;
+}
+
+.our-team__image4 {
+  grid-column: 39/46;
+  grid-row: 8/14;
+}
+
+.our-team__developer {
+  grid-column: 40/45;
+  grid-row: 13/16;
+  text-align: center;
+  align-self: center;
+}

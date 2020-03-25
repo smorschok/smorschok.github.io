@@ -1,0 +1,79 @@
+.Services-Provided {
+  background-image: url(../media/services.jpg);
+  height: 100vh;
+  background-position-x: center;
+  max-width: 1198px;
+  height: 478px;
+  display: grid;
+  grid-template-columns: repeat(48, 1fr);
+  grid-template-rows: repeat(19, 1fr);
+  margin: 0 auto;
+  margin-top: 55px;
+  color: #fff;
+}
+
+.Services-Provided p {
+  margin: 0;
+}
+
+.Services-Provided h4 {
+  position: relative;
+  grid-column: 3/48;
+  grid-row: 2/4;
+  padding-top: 7px;
+  margin: 0;
+}
+
+.Services-Provided h4::before {
+  content: '';
+  position: absolute;
+  width: 133px;
+  bottom: -13px;
+  height: 1px;
+  left: 121px;
+  background-color: #c5c5c5;
+}
+
+.Services-Provided h4 span {
+  font-size: 50px;
+}
+
+.Services-Provided h4 span:last-child {
+  color: #fff;
+  margin: 0 0 0 3px;
+}
+
+.app-development p:first-child, .game-development p:first-child, .app-design p:first-child, .game-design p:first-child {
+  font-size: 18px;
+}
+
+.app-development p:last-child, .game-development p:last-child, .app-design p:last-child, .game-design p:last-child {
+  font-size: 11px;
+  margin: 0;
+  padding: 22px 0 0 0;
+  line-height: 13px;
+}
+
+.app-development {
+  grid-column: 20/29;
+  grid-row: 6/11;
+  padding: 7px 0 0 0px;
+}
+
+.game-development {
+  padding: 7px 0 0 17px;
+  grid-column: 32/42;
+  grid-row: 6/13;
+}
+
+.app-design {
+  padding: 13px 0 0 0;
+  grid-column: 20/29;
+  grid-row: 13/18;
+}
+
+.game-design {
+  padding: 13px 0 0 16px;
+  grid-column: 32/42;
+  grid-row: 13/18;
+}

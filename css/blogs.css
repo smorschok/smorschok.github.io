@@ -1,0 +1,94 @@
+.blogs {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1138px;
+  margin: auto;
+  padding: 10px 0 0 0;
+}
+
+.blogs #myBtnContainer {
+  padding: 0 0 0 24px;
+}
+
+.blogs h4 {
+  position: relative;
+  margin: 40px 0 33px 0;
+}
+
+.blogs h4::before {
+  content: '';
+  position: absolute;
+  width: 85px;
+  bottom: 2px;
+  height: 1px;
+  left: 5px;
+  background-color: #c5c5c5;
+}
+
+.blogs h4 span {
+  font-size: 50px;
+}
+
+.blogs .all-btn {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 0 73px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row img {
+  max-width: 100%;
+}
+
+.column {
+  display: none;
+  padding: 11px 44px 8px;
+  max-width: 188px;
+  text-align: center;
+}
+
+.column p:nth-child(2) {
+  text-align: left;
+  color: #ffc600;
+  font-size: 18px;
+}
+
+.column p:nth-child(3) {
+  font-family: 'MyriadPro-Bold';
+  text-align: left;
+  font-size: 15px;
+}
+
+.column p:nth-child(4) {
+  font-family: 'MyriadPro-Italic';
+  text-align: left;
+  font-size: 12px;
+}
+
+.show {
+  display: block;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+  font-size: 18px;
+  text-align: left;
+}
+
+.btn:hover {
+  color: #ffc600;
+  box-sizing: border-box;
+}
+
+.btn.active {
+  text-shadow: 1px 1px 1px #000000;
+  color: #ffc600;
+}

@@ -1,5 +1,6 @@
 .featured-projects{
     max-width: 1198px;
+    height: 633px;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -13,10 +14,9 @@
         }
         h4::before{
             content: '';
-            display: flex;
             position: absolute;
-            width: 133px;
-            bottom: 1px;
+            width: 134px;
+            bottom: 2px;
             height: 1px;
             left: 113px;
             background-color: #c5c5c5;
@@ -149,7 +149,7 @@
 	max-width: 100%;
 }
 @media (max-width:767px){
-	body {padding: 50px 10px;}
+	.about-slider {padding: 50px 10px;}
 }
 @media (max-width:767px){
 	.slider {

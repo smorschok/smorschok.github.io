@@ -1,20 +1,19 @@
 .about {
-  width: 1198px;
+  max-width: 1198px;
   margin: 0 auto;
-  margin-top: 7px;
+  margin-top: 23px;
 }
 
 .about-header {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  max-width: 1198px;
 }
 
 .title {
-  display: flex;
-  width: 555px;
-  justify-content: center;
-  margin: 53px 0 0 0;
+  width: 339px;
+  margin: 0 auto;
+  align-self: flex-end;
 }
 
 .title h3 {
@@ -22,7 +21,6 @@
   font-size: 80px;
   color: #000000;
   line-height: 44px;
-  width: 292px;
   height: 152px;
   margin: 0;
 }
@@ -37,7 +35,7 @@
   width: 132px;
   bottom: 37px;
   height: 1px;
-  right: 9px;
+  right: 56px;
   background-color: #c5c5c5;
   display: flex;
 }
@@ -49,8 +47,7 @@
 }
 
 .description {
-  width: 599px;
-  margin: 5px 0 0 45px;
+  max-width: 599px;
   position: relative;
 }
 
