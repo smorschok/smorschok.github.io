@@ -1,3 +1,8 @@
+document.getElementById("trigger").onclick = function() {open()};
+
+function open() {
+    document.getElementById("navigation").classList.toggle("show");
+}
 $(document).ready(function(){
     $('.slider').slick({
         arrows:true,

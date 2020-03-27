@@ -8,10 +8,18 @@ body {
   background-repeat: no-repeat;
   overflow-x: hidden;
   background-size: cover;
+  height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.bg-promo header {
+  margin-bottom: 7vh;
 }
 
 .logo {
-  width: 1198px;
+  max-width: 1198px;
   margin: 0 auto;
 }
 
@@ -19,9 +27,9 @@ body {
   font-family: 'MyriadPro-Bold';
   font-size: 201px;
   letter-spacing: -10.1px;
+  line-height: 1;
   color: #ffffff;
   margin: 76px 0 0 30px;
-  height: 199px;
 }
 
 .logo p {
@@ -36,10 +44,18 @@ body {
   margin: 28px 0 0 42px;
 }
 
+.logo p a {
+  text-decoration: none;
+  color: #ffc600;
+}
+
+.logo p a:hover {
+  text-decoration: underline;
+}
+
 h2 {
   font-family: 'MyriadPro-Bold';
-  width: 414px;
-  height: 110px;
+  max-width: 414px;
   font-size: 60px;
   line-height: 0.8;
   letter-spacing: -3px;
@@ -48,19 +64,15 @@ h2 {
   margin: 69px 0 0 46px;
 }
 
-.nav-promo {
+.container-nav {
   background-image: url(../media/nav.jpg);
-  background-repeat: no-repeat;
-  overflow-x: hidden;
-  height: 654px;
-  background-position: center;
-  background-size: 1198px;
-  margin-top: 64px;
-}
-
-.nav-promo .container-nav {
   width: 1198px;
   margin: 0 auto;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+  background-position: top;
+  background-size: 1198px;
+  flex-grow: 1;
 }
 
 .nav-promo ul {
@@ -81,4 +93,59 @@ h2 {
 .nav-promo a:hover {
   color: #ffffff;
   text-decoration: underline;
+}
+
+@media (max-width: 1200px) {
+  .logo h1 {
+    font-size: 11vh;
+    letter-spacing: 0;
+  }
+  .container-nav {
+    width: auto;
+    margin: 0;
+  }
+  .container-nav h2 {
+    font-size: 5vw;
+    letter-spacing: 0;
+  }
+  .container-nav .nav-promo {
+    padding: 0 0 0 45px;
+    margin: 20px 0 0 0;
+  }
+  .container-nav .nav-promo ul {
+    margin: 0;
+    padding: 0;
+  }
+  .container-nav .nav-promo .trigger {
+    display: inline-block;
+    cursor: pointer;
+  }
+  .container-nav .nav-promo .navigation {
+    display: none;
+  }
+  .container-nav .nav-promo .navigation.show {
+    display: block;
+  }
+  .container-nav .nav-promo .trigger i {
+    display: block;
+    width: 30px;
+    height: 6px;
+    margin: 4px auto;
+    background: #ffc600;
+    border-radius: 25px;
+  }
+}
+
+@media (max-width: 360px) {
+  .logo h1 {
+    margin-left: 13px;
+  }
+  .logo p {
+    margin: 5px 0px 0 30px;
+    font-size: 4vw;
+    margin-left: 13px;
+  }
+  h2 {
+    margin: 2px 0 0 16px;
+  }
 }

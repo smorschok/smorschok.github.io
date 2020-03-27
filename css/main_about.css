@@ -2,6 +2,7 @@
   max-width: 1198px;
   margin: 0 auto;
   margin-top: 23px;
+  padding: 0 8px;
 }
 
 .about-header {
@@ -157,4 +158,39 @@
 .column-text p:last-child {
   margin-top: 11px;
   line-height: 1.2;
+}
+
+@media (max-width: 1000px) {
+  .about .about-header {
+    display: block;
+  }
+  .about .about-header .description {
+    margin: 0 auto;
+  }
+  .about .about-unit {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about .about-unit .about-column1, .about .about-unit .about-column2, .about .about-unit .about-column3 {
+    position: static;
+    width: 100%;
+  }
+  .about .about-unit .column-icon1 {
+    position: static;
+  }
+  .about .about-unit .column-icon2, .about .about-unit .column-icon3 {
+    display: none;
+  }
+  .about .about-unit .column-title1, .about .about-unit .column-title2, .about .about-unit .column-title3 {
+    position: static;
+    text-align: left;
+  }
+  .about .about-unit .column-text {
+    margin: 0;
+    text-align: left;
+  }
+  .about .about-unit .column-text p {
+    font-size: 3vh;
+    margin: 0;
+  }
 }

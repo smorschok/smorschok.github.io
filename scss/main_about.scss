@@ -2,6 +2,7 @@
     max-width: 1198px;
     margin: 0 auto;
     margin-top: 23px;
+    padding: 0 8px;
   }
   
   .about-header{
@@ -151,5 +152,40 @@
     }
 }
 
-
+@media(max-width:1000px){
+  .about{
+    .about-header{
+      display: block;
+      .description{
+        margin: 0 auto;
+      }
+    }
+    .about-unit{
+      flex-direction: column;
+      align-items: center;
+      .about-column1, .about-column2, .about-column3 {
+        position: static;
+        width: 100%;
+      }
+      .column-icon1{
+        position: static;
+      }
+        .column-icon2, .column-icon3{
+          display: none;
+        }
+        .column-title1,.column-title2,.column-title3{
+          position: static;
+          text-align: left;
+        }
+        .column-text{
+          margin: 0;
+          text-align: left;
+          p{
+            font-size: 3vh;
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
 

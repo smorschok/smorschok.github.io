@@ -1,9 +1,9 @@
 .featured-projects {
   max-width: 1198px;
-  height: 633px;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+  padding: 0 8px;
 }
 
 .featured-projects__title {
@@ -33,42 +33,7 @@
   color: black;
 }
 
-.menu ul {
-  display: flex;
-  position: relative;
-  list-style: none;
-  padding: 0 0 0 0;
-  margin: 17px 0 0 2px;
-}
-
-.menu ul li {
-  font-family: "MyriadPro-Semibold";
-  font-size: 9px;
-}
-
-.menu__item {
-  transform: scaleY(1.1);
-  text-shadow: 0px 0px 0px #000000;
-  margin: 0 0 0 15px;
-}
-
-.menu__item_active {
-  margin: 0 20px 0 0;
-}
-
-.menu__item_active::before {
-  content: '';
-  display: flex;
-  position: absolute;
-  width: 21px;
-  bottom: -4px;
-  height: 1px;
-  left: 11px;
-  background-color: #ffc600;
-}
-
 .about-slider {
-  height: 100%;
   padding: 50px;
   display: flex;
   justify-content: center;
@@ -161,6 +126,12 @@
 
 .slider__item img {
   max-width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .featured-projects__title {
+    margin: 89px 0 0 0;
+  }
 }
 
 @media (max-width: 767px) {

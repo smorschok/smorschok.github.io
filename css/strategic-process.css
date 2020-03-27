@@ -4,6 +4,7 @@
   flex-direction: column;
   align-items: flex-end;
   margin: 0 auto;
+  padding: 0 8px;
 }
 
 .Strategic-Process__title h4 {
@@ -159,4 +160,28 @@
 
 .outcome__image img {
   max-width: 100%;
+}
+
+@media (max-width: 1023px) {
+  .Strategic-Process {
+    display: block;
+  }
+  .our-process, .method, .outcome {
+    display: block;
+    max-height: fit-content;
+  }
+  .our-process__description, .method__description, .outcome__description {
+    padding: 0;
+    max-width: 100%;
+  }
+  .our-process__description h5, .method__description h5, .outcome__description h5 {
+    margin: 3px 0 24px 0;
+  }
+  .our-process__description p, .method__description p, .outcome__description p {
+    margin-left: 0;
+    padding-left: 0;
+  }
+  .our-process__description p:nth-child(2), .method__description p:nth-child(2), .outcome__description p:nth-child(2) {
+    margin-top: auto;
+  }
 }

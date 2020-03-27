@@ -2,6 +2,7 @@
   background-image: url(../media/services.jpg);
   height: 100vh;
   background-position-x: center;
+  background-repeat: no-repeat;
   max-width: 1198px;
   height: 478px;
   display: grid;
@@ -76,4 +77,36 @@
   padding: 13px 0 0 16px;
   grid-column: 32/42;
   grid-row: 13/18;
+}
+
+@media (max-width: 1024px) {
+  .Services-Provided {
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    padding: 0 8px;
+  }
+  .Services-Provided h4::before {
+    content: '';
+    bottom: 5px;
+  }
+  .Services-Provided .app-development, .Services-Provided .game-development, .Services-Provided .app-design, .Services-Provided .game-design {
+    text-align: center;
+    padding: 0;
+  }
+  .Services-Provided .app-development p:first-child, .Services-Provided .game-development p:first-child, .Services-Provided .app-design p:first-child, .Services-Provided .game-design p:first-child {
+    font-size: 23px;
+    color: #ffc600;
+  }
+  .Services-Provided .app-development p:last-child, .Services-Provided .game-development p:last-child, .Services-Provided .app-design p:last-child, .Services-Provided .game-design p:last-child {
+    padding: 4px 0;
+    font-size: 22px;
+    line-height: 1;
+  }
+}
+
+@media (max-width: 500px) {
+  .Services-Provided .app-development p:last-child, .Services-Provided .game-development p:last-child, .Services-Provided .app-design p:last-child, .Services-Provided .game-design p:last-child {
+    font-size: 14px;
+  }
 }

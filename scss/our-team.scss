@@ -98,3 +98,18 @@
         align-self: center;
     }
 }
+@media(max-width:500px){
+    .our-team{
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+        &__image1,&__image2,&__image3,&__image4{
+            align-self: center;
+            width: 40%;
+            padding: 16px;
+        }
+        .development{
+            display: none;
+        }
+    }
+}

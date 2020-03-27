@@ -1,0 +1,97 @@
+footer {
+  background-image: url(../media/footer.jpg);
+  background-repeat: no-repeat;
+  background-color: #000;
+  display: flex;
+  max-width: 1198px;
+  margin: 0 auto;
+  margin-top: 4%;
+}
+
+footer .footer-menu {
+  flex: 3;
+  padding: 0 0 0 24px;
+}
+
+footer .footer-menu h5 {
+  font-family: 'MyriadPro-Bold';
+  color: #fff;
+  font-size: 60px;
+  letter-spacing: -3px;
+  margin: 33% 0 0 0;
+}
+
+footer .footer-menu nav ul {
+  list-style: none;
+  padding: 8% 0 0 0;
+}
+
+footer .footer-menu nav ul li {
+  margin: 0 0 18px 0;
+}
+
+footer .footer-menu nav ul a {
+  font-family: 'MyriadPro-Semibold';
+  color: #fff;
+  text-decoration: none;
+}
+
+footer .footer-menu nav ul a:hover {
+  box-shadow: 0 0 10px 3px #ffc600, 0 0 13px 6px #ffc600, 0 0 36px 5px #ffc600;
+  background-color: #ffc600;
+  color: #000;
+}
+
+footer .footer-menu__social {
+  position: relative;
+  display: flex;
+  justify-content: end;
+  padding: 46px 0 18px 0;
+}
+
+footer .footer-menu__social::before {
+  content: '';
+  position: absolute;
+  width: 36%;
+  top: 30px;
+  height: 2px;
+  left: 2px;
+  background-color: #ffc600;
+}
+
+footer .footer-menu__social img {
+  width: 19px;
+  height: 19px;
+  margin: 0 1px 0 4px;
+}
+
+footer .footer-menu__social img:hover {
+  border: solid 2px #ffc600;
+  border-radius: 50px;
+  box-sizing: border-box;
+}
+
+footer .footer-title {
+  flex: 8;
+  display: flex;
+}
+
+footer .footer-title h6 {
+  font-family: 'MyriadPro-Bold';
+  font-size: 6vw;
+  letter-spacing: -7.55px;
+  line-height: 0.7;
+  color: #fff;
+  align-self: flex-end;
+  margin: 0;
+  padding: 0 0 14% 0;
+}
+
+@media (max-width: 500px) {
+  footer .footer-title {
+    display: none;
+  }
+  footer .footer-menu h5 {
+    margin: 0;
+  }
+}
