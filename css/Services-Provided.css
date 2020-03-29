@@ -100,7 +100,7 @@
   }
   .Services-Provided .app-development p:last-child, .Services-Provided .game-development p:last-child, .Services-Provided .app-design p:last-child, .Services-Provided .game-design p:last-child {
     padding: 4px 0;
-    font-size: 22px;
+    font-size: 2vh;
     line-height: 1;
   }
 }

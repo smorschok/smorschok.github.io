@@ -471,7 +471,7 @@ h2 {
   text-decoration: underline;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1024px) {
   .logo h1 {
     font-size: 11vh;
     letter-spacing: 0;
@@ -492,6 +492,9 @@ h2 {
     margin: 0;
     padding: 0;
   }
+  .container-nav .nav-promo ul li {
+    margin-top: 10px;
+  }
   .container-nav .nav-promo .trigger {
     display: inline-block;
     cursor: pointer;
@@ -509,6 +512,13 @@ h2 {
     margin: 4px auto;
     background: #ffc600;
     border-radius: 25px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .nav-promo ul li {
+    margin-right: 20px;
+    font-size: 3vh;
   }
 }
 
@@ -688,12 +698,17 @@ h2 {
   line-height: 1.2;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
   .about .about-header {
     display: block;
   }
   .about .about-header .description {
     margin: 0 auto;
+    position: static;
+  }
+  .about .about-header .description p {
+    font-size: 2vh;
+    line-height: 1;
   }
   .about .about-unit {
     flex-direction: column;
@@ -712,13 +727,14 @@ h2 {
   .about .about-unit .column-title1, .about .about-unit .column-title2, .about .about-unit .column-title3 {
     position: static;
     text-align: left;
+    font-size: 24px;
   }
   .about .about-unit .column-text {
     margin: 0;
     text-align: left;
   }
   .about .about-unit .column-text p {
-    font-size: 3vh;
+    font-size: 2vh;
     margin: 0;
   }
 }
@@ -1039,9 +1055,12 @@ h2 {
   max-width: 100%;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1024px) {
   .Strategic-Process {
     display: block;
+  }
+  .Strategic-Process p {
+    font-size: 2vh;
   }
   .our-process, .method, .outcome {
     display: block;
@@ -1060,6 +1079,13 @@ h2 {
   }
   .our-process__description p:nth-child(2), .method__description p:nth-child(2), .outcome__description p:nth-child(2) {
     margin-top: auto;
+  }
+  .Strategic-Process__title .Strategic-Process__description p:last-child {
+    font-size: 2vh;
+    line-height: 1;
+  }
+  .our-process__description p:last-child, .method__description p:last-child, .outcome__description p:last-child {
+    font-size: 2vh;
   }
 }
 
@@ -1165,7 +1191,7 @@ h2 {
   }
   .Services-Provided .app-development p:last-child, .Services-Provided .game-development p:last-child, .Services-Provided .app-design p:last-child, .Services-Provided .game-design p:last-child {
     padding: 4px 0;
-    font-size: 22px;
+    font-size: 2vh;
     line-height: 1;
   }
 }
@@ -1365,6 +1391,15 @@ h2 {
 .testimonials__main_image p span {
   font-family: 'MyriadPro-Italic';
   color: #fff;
+}
+
+@media (max-width: 1024px) {
+  .testimonials p {
+    font-size: 2vh;
+  }
+  .testimonials__main_description p:last-child {
+    font-size: 2vh;
+  }
 }
 
 .blogs {

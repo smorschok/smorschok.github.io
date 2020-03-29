@@ -152,12 +152,17 @@
     }
 }
 
-@media(max-width:1000px){
+@media(max-width:1024px){
   .about{
     .about-header{
       display: block;
       .description{
         margin: 0 auto;
+        position: static;
+        p{
+          font-size: 2vh;
+          line-height: 1;
+        }
       }
     }
     .about-unit{
@@ -176,12 +181,13 @@
         .column-title1,.column-title2,.column-title3{
           position: static;
           text-align: left;
+          font-size: 24px;
         }
         .column-text{
           margin: 0;
           text-align: left;
           p{
-            font-size: 3vh;
+            font-size: 2vh;
             margin: 0;
           }
         }

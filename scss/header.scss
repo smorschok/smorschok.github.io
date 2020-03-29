@@ -88,7 +88,7 @@ a{
  }
 }
 }
-@media (max-width:1200px){
+@media (max-width:1024px){
     .logo{
         h1{
             font-size: 11vh;
@@ -108,6 +108,9 @@ a{
             ul{
                 margin: 0;
                 padding: 0;
+                li{
+                    margin-top: 10px;
+                }
             }
             .trigger{
                 display:inline-block;
@@ -128,6 +131,17 @@ a{
                 border-radius: 25px;
             }
         }  
+    }
+}
+@media (max-width:1024px){
+    .nav-promo{
+        ul{
+            
+            li{
+                margin-right: 20px;
+                font-size: 3vh;
+            }
+        }
     }
 }
 @media (max-width:360px){

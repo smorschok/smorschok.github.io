@@ -162,9 +162,12 @@
   max-width: 100%;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1024px) {
   .Strategic-Process {
     display: block;
+  }
+  .Strategic-Process p {
+    font-size: 2vh;
   }
   .our-process, .method, .outcome {
     display: block;
@@ -183,5 +186,12 @@
   }
   .our-process__description p:nth-child(2), .method__description p:nth-child(2), .outcome__description p:nth-child(2) {
     margin-top: auto;
+  }
+  .Strategic-Process__title .Strategic-Process__description p:last-child {
+    font-size: 2vh;
+    line-height: 1;
+  }
+  .our-process__description p:last-child, .method__description p:last-child, .outcome__description p:last-child {
+    font-size: 2vh;
   }
 }

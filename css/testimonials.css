@@ -57,3 +57,12 @@
   font-family: 'MyriadPro-Italic';
   color: #fff;
 }
+
+@media (max-width: 1024px) {
+  .testimonials p {
+    font-size: 2vh;
+  }
+  .testimonials__main_description p:last-child {
+    font-size: 2vh;
+  }
+}

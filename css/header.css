@@ -95,7 +95,7 @@ h2 {
   text-decoration: underline;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1024px) {
   .logo h1 {
     font-size: 11vh;
     letter-spacing: 0;
@@ -116,6 +116,9 @@ h2 {
     margin: 0;
     padding: 0;
   }
+  .container-nav .nav-promo ul li {
+    margin-top: 10px;
+  }
   .container-nav .nav-promo .trigger {
     display: inline-block;
     cursor: pointer;
@@ -133,6 +136,13 @@ h2 {
     margin: 4px auto;
     background: #ffc600;
     border-radius: 25px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .nav-promo ul li {
+    margin-right: 20px;
+    font-size: 3vh;
   }
 }
 

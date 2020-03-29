@@ -160,12 +160,17 @@
   line-height: 1.2;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
   .about .about-header {
     display: block;
   }
   .about .about-header .description {
     margin: 0 auto;
+    position: static;
+  }
+  .about .about-header .description p {
+    font-size: 2vh;
+    line-height: 1;
   }
   .about .about-unit {
     flex-direction: column;
@@ -184,13 +189,14 @@
   .about .about-unit .column-title1, .about .about-unit .column-title2, .about .about-unit .column-title3 {
     position: static;
     text-align: left;
+    font-size: 24px;
   }
   .about .about-unit .column-text {
     margin: 0;
     text-align: left;
   }
   .about .about-unit .column-text p {
-    font-size: 3vh;
+    font-size: 2vh;
     margin: 0;
   }
 }
