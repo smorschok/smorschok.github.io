@@ -174,12 +174,20 @@
   box-sizing: border-box;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 1024px) {
   .contact-us {
     display: block;
   }
   .contact-us__link form {
     padding: 0;
+  }
+  .contact-us__link form #tel {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .contact-us__link form #email {
+    width: 100%;
+    box-sizing: border-box;
   }
   .contact-us__link form .communication {
     display: block;
@@ -193,5 +201,8 @@
   .contact-us__social {
     padding: 0;
     position: static;
+  }
+  .contact-us__social::before {
+    display: none;
   }
 }
