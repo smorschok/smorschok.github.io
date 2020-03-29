@@ -3,7 +3,7 @@
   justify-content: space-between;
   max-width: 1138px;
   margin: auto;
-  padding: 10px 0 0 0;
+  padding: 10px 8px 0 8px;
 }
 
 .blogs #myBtnContainer {
@@ -91,4 +91,55 @@
 .btn.active {
   text-shadow: 1px 1px 1px #000000;
   color: #ffc600;
+}
+
+@media (max-width: 991px) {
+  .blogs {
+    display: block;
+  }
+  .blogs h4 {
+    margin: 0;
+  }
+  .blogs .all-btn {
+    padding: 0;
+  }
+  .row {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin: 10px 0 0 0;
+  }
+  .column {
+    padding: 0;
+  }
+  .column p:nth-child(2), .column p:nth-child(3), .column p:nth-child(4) {
+    display: none;
+  }
+  .row img {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .blogs #myBtnContainer {
+    padding: 0;
+  }
+  .blogs .all-btn {
+    padding: 0;
+  }
+  .row {
+    flex-wrap: nowrap;
+  }
+  .btn {
+    font-size: 24px;
+  }
+  .column p:nth-child(2) {
+    font-size: 26px;
+  }
+  .column p:nth-child(3) {
+    font-size: 24px;
+  }
+  .column p:nth-child(4) {
+    font-size: 22px;
+  }
 }

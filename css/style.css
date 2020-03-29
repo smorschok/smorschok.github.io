@@ -447,7 +447,7 @@ h2 {
   background-repeat: no-repeat;
   overflow-x: hidden;
   background-position: top;
-  background-size: 1198px;
+  background-size: cover;
   flex-grow: 1;
 }
 
@@ -1291,7 +1291,7 @@ h2 {
   align-self: center;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 950px) {
   .our-team {
     display: flex;
     flex-wrap: wrap;
@@ -1299,7 +1299,7 @@ h2 {
   }
   .our-team__image1, .our-team__image2, .our-team__image3, .our-team__image4 {
     align-self: center;
-    width: 40%;
+    width: 30%;
     padding: 16px;
   }
   .our-team .development {
@@ -1372,7 +1372,7 @@ h2 {
   justify-content: space-between;
   max-width: 1138px;
   margin: auto;
-  padding: 10px 0 0 0;
+  padding: 10px 8px 0 8px;
 }
 
 .blogs #myBtnContainer {
@@ -1462,6 +1462,57 @@ h2 {
   color: #ffc600;
 }
 
+@media (max-width: 991px) {
+  .blogs {
+    display: block;
+  }
+  .blogs h4 {
+    margin: 0;
+  }
+  .blogs .all-btn {
+    padding: 0;
+  }
+  .row {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin: 10px 0 0 0;
+  }
+  .column {
+    padding: 0;
+  }
+  .column p:nth-child(2), .column p:nth-child(3), .column p:nth-child(4) {
+    display: none;
+  }
+  .row img {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .blogs #myBtnContainer {
+    padding: 0;
+  }
+  .blogs .all-btn {
+    padding: 0;
+  }
+  .row {
+    flex-wrap: nowrap;
+  }
+  .btn {
+    font-size: 24px;
+  }
+  .column p:nth-child(2) {
+    font-size: 26px;
+  }
+  .column p:nth-child(3) {
+    font-size: 24px;
+  }
+  .column p:nth-child(4) {
+    font-size: 22px;
+  }
+}
+
 .contact-us {
   display: flex;
   max-width: 1198px;
@@ -1514,9 +1565,12 @@ h2 {
   padding: 0 0 0 63px;
 }
 
-.contact-us__link form input, .contact-us__link form textarea {
+.contact-us__link form #name, .contact-us__link form #tel, .contact-us__link form #email, .contact-us__link form textarea {
   background-color: #2046b3;
   border: solid 1px #c5c5c5;
+  color: #fff;
+  box-shadow: inset 0 0 0 50px #2046b3;
+  -webkit-text-fill-color: #fff;
 }
 
 .contact-us__link form #name, .contact-us__link form #tel, .contact-us__link form #email {
@@ -1547,6 +1601,10 @@ h2 {
   justify-content: space-between;
 }
 
+.contact-us__link form #gotcha {
+  display: none;
+}
+
 .contact-us__link form #submit {
   display: block;
   width: 18%;
@@ -1554,6 +1612,7 @@ h2 {
   padding: 6px 0 6px 0;
   background-color: #ffc600;
   font-family: 'MyriadPro-Semibold';
+  border: none;
   cursor: pointer;
 }
 

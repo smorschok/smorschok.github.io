@@ -98,14 +98,14 @@
         align-self: center;
     }
 }
-@media(max-width:500px){
+@media(max-width:950px){
     .our-team{
         display: flex;
         flex-wrap: wrap;
         height: auto;
         &__image1,&__image2,&__image3,&__image4{
             align-self: center;
-            width: 40%;
+            width: 30%;
             padding: 16px;
         }
         .development{

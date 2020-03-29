@@ -113,7 +113,7 @@
   align-self: center;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 950px) {
   .our-team {
     display: flex;
     flex-wrap: wrap;
@@ -121,7 +121,7 @@
   }
   .our-team__image1, .our-team__image2, .our-team__image3, .our-team__image4 {
     align-self: center;
-    width: 40%;
+    width: 30%;
     padding: 16px;
   }
   .our-team .development {

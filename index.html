@@ -9,6 +9,7 @@
 </head>
 <body>
     <section class="bg-promo">
+        <a id="home"></a>
         <header>
             <div class="logo">
                 <h1><span>S</span>ublime</h1>
@@ -35,6 +36,7 @@
         </div>
     </section>
 <section class="about">
+    <a id="about"></a>
     <div class="about-header">
     <div class="title">
     <h3><strong>About</strong> <span> S</span>ublime</h3>
@@ -51,7 +53,6 @@
 </div>
 <div class="about-unit"> 
     <div class="about-column1">
-      
         <div class="column-icon1"> <img src="./media/about/icon.png" alt="icon"></div>
         <div class="column-title1">App Development</div>
         <div class="column-text">
@@ -69,7 +70,6 @@
             </div>
 
             <div class="about-column3">
-               
         <div class="column-icon3"><img src="./media/about/icon.png" alt="icon"></div>
         <div class="column-title3">Content Creation</div>
         <div class="column-text">
@@ -80,6 +80,7 @@
 </div>
 </section>
 <section class="featured-projects">
+    <a id="our-works"></a>
     <div class="featured-projects__title"> <h4><span>F</span>eatured <span>P</span>rojects</h4>
     </div>
     <div class="about-slider">
@@ -110,6 +111,7 @@
 </section>
 
 <section class="Strategic-Process">
+    <a id="clients"></a>
     <div class="Strategic-Process__title"> 
         <h4><span>S</span>trategic <span>P</span>rocess</h4>
         <div class="Strategic-Process__description">
@@ -148,6 +150,7 @@
     </div>
 </section>
 <section class="Services-Provided">
+    <a id="services"></a>
     <h4><span>S</span>ervices <span>P</span>rovided</h4>
     <div class="app-development">
         <p>App Development</p>
@@ -167,6 +170,7 @@
     </div>
 </section>
 <section class="our-team">
+    <a id="team"></a>
     <h4><span>O</span>ur <span>T</span>eam</h4>
     <div class="our-team__description">
         <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis molestie dignissim. Nulla pellentesque et nisi et euismod. Pellentesque quis tristique magna.</p>
@@ -202,6 +206,7 @@
     
 </section>
 <section class="testimonials">
+    <a id="testimonials"></a>
     <h4><span>T</span>estimonials</h4>
 <div class="testimonials__main">
     <div class="testimonials__main_description">
@@ -216,6 +221,7 @@
 </section>
 
 <section class="blogs">
+    <a id="blog"></a>
     <div id="myBtnContainer">
         <h4><span>B</span>logs</h4>
         <div class="all-btn">
@@ -372,16 +378,19 @@
     </div>
 </section>
 <section class="contact-us">
+    <a id="contact-us"></a>
     <div class="contact-us__map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1976.3612293709805!2d27.523430808977942!3d53.90859434371017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbc55f35bf3dad%3A0xaabda25bdeeb761f!2z0YPQuy4g0KHQutGA0YvQs9Cw0L3QvtCy0LAgMTQsINCc0LjQvdGB0Lo!5e0!3m2!1sru!2sby!4v1585069023701!5m2!1sru!2sby"></iframe></div>
     <div class="contact-us__link">
         <h4><span>C</span>ontact <span>U</span>s</h4>
-        <form action="">
+        <form action="https://formspree.io/smorschok1997@mail.ru"
+        method="POST">
             <input type="text" id="name" name="form-sublime" placeholder="Your Name">
             <div class="communication">
             <input type="tel" id="tel" name="form-sublime" placeholder="Mobile">
             <input type="email" id="email" name="form-sublime" placeholder="Email">
             </div>
-            <textarea name="text-title" id="message" name="form-sublime" rows="4" placeholder="Your Message" ></textarea>
+            <input type="text" name="_gotcha" id="gotcha"/>
+            <textarea id="message" name="form-sublime" rows="4" placeholder="Your Message" ></textarea>
             <input type="submit" id="submit" name="form-sublime" value="SEND">
         </form>
         <div class="contact-us__description">
@@ -411,15 +420,15 @@
         <h5><span>S</span>ublime</h5>
         <nav>
             <ul>
-                <li><a href="">HOME</a></li>
-                <li><a href="">ABOUT SUBLIME</a></li>
-                <li><a href="">OUR WORKS</a></li>
-                <li><a href="">SERVICES</a></li>
-                <li><a href="">TEAM</a></li>
-                <li><a href="">TESTIMONIALS</a></li>
-                <li><a href="">BLOG</a></li>
-                <li><a href="">CLIENTS</a></li>
-                <li><a href="">CONTACT US</a></li>
+                <li><a href="./index.html#home">HOME</a></li>
+                <li><a href="./index.html#about">ABOUT SUBLIME</a></li>
+                <li><a href="./index.html#our-works">OUR WORKS</a></li>
+                <li><a href="./index.html#services">SERVICES</a></li>
+                <li><a href="./index.html#team">TEAM</a></li>
+                <li><a href="./index.html#testimonials">TESTIMONIALS</a></li>
+                <li><a href="./index.html#blog">BLOG</a></li>
+                <li><a href="./index.html#clients">CLIENTS</a></li>
+                <li><a href="./index.html#contact-us">CONTACT US</a></li>
             </ul>
         </nav>
         <div class="footer-menu__social">
