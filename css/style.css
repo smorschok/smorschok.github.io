@@ -1846,7 +1846,7 @@ footer .footer-title h6 {
   padding: 0 0 14% 0;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 1024px) {
   footer .footer-title {
     display: none;
   }
